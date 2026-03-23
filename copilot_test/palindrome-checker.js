@@ -15,3 +15,4 @@ function isPalindrome(str) {
 console.log(isPalindrome("racecar")); // true
 console.log(isPalindrome("taco cat")); // true
 console.log(isPalindrome("hello")); // false
+

@@ -2,7 +2,7 @@ using System;
 
 namespace c_console_app
 {
-    class Pirate
+    public class Pirate
     {
         public string Name { get; set; }
         public int Age { get; set; }

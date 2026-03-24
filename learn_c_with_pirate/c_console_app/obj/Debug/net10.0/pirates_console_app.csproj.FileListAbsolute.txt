@@ -1,0 +1,15 @@
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/bin/Debug/net10.0/c_console_app
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/bin/Debug/net10.0/c_console_app.deps.json
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/bin/Debug/net10.0/c_console_app.runtimeconfig.json
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/bin/Debug/net10.0/c_console_app.dll
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/bin/Debug/net10.0/c_console_app.pdb
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/pirates_console_app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/pirates_console_app.AssemblyInfoInputs.cache
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/pirates_console_app.AssemblyInfo.cs
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/pirates_console_app.csproj.CoreCompileInputs.cache
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/pirates_console_app.sourcelink.json
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/c_console_app.dll
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/refint/c_console_app.dll
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/c_console_app.pdb
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/pirates_console_app.genruntimeconfig.cache
+/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/obj/Debug/net10.0/ref/c_console_app.dll

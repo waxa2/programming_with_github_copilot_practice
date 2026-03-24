@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5ebdykiJmBE=",
+  "dgSpecHash": "ByG0rY/xP5w=",
   "success": true,
   "projectFilePath": "/Users/xabier_laibarra/Desktop/2025/Coding/github_copilot_book/learn_c_with_pirate/c_console_app/pirates_console_app.csproj",
-  "expectedPackageFiles": [
-    "/Users/xabier_laibarra/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/Users/xabier_laibarra/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "/Users/xabier_laibarra/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.36/microsoft.netcore.app.host.osx-arm64.6.0.36.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

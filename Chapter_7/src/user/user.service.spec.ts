@@ -16,3 +16,8 @@ describe('UserService', () => {
     expect(service).toBeDefined();
   });
 });
+
+// create null parameter through BadRequestException
+it('should throw BadRequestException when create is called with null', () => {
+  expect(() => service.create(null)).toThrow('Invalid input');
+});

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@nestjs/mapped-types": "*",
     "@nestjs/serve-static": "^5.0.4"
   }
 }

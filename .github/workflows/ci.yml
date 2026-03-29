@@ -1,0 +1,44 @@
+name: CI Pipeline for NestJS API
+
+on:
+  push:
+    branches:
+      - dev # Trigger the pipeline on pushes to the 'dev' branch
+  pull_request:
+    branches:
+      - dev # Trigger the pipeline on pull requests targeting the 'dev' branch
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16 # Use Node.js version 16 (or adjust as needed)
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run linting
+      - name: Run lint
+        run: npm run lint
+
+      # Step 5: Run tests
+      - name: Run tests
+        run: npm test
+
+      # Step 6: Check code coverage (optional)
+      - name: Run coverage
+        run: npm run test:cov
+
+      # Step 7: Build the application
+      - name: Build application
+        run: npm run build

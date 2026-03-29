@@ -2,7 +2,10 @@ This repository intends to gather the practice exercises contained in the *Progr
 
 # Todo API
 
+![CI Pipeline](https://github.com/waxa2/programming_with_github_copilot_practice/actions/workflows/ci.yml/badge.svg)
+
 The `todo-api` project is a RESTful API for managing a to-do list. It allows users to create, read, update, and delete tasks. This project is designed to be simple, efficient, and easy to integrate with other applications.
+
 
 ## Features
 

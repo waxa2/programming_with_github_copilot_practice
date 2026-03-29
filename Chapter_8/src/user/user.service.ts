@@ -142,49 +142,7 @@ export class UserService {
       throw new BadRequestException('User not found');
     }
     const { username, password } = updateUserDto;
-    // validate username
-    if (username && username.length < 3) {
-      throw new BadRequestException(
-        'Username must be at least 3 characters long',
-      );
-    }
-    if (username && username.length > 20) {
-      throw new BadRequestException('Username cannot exceed 20 characters');
-    }
-    if (username && !/^[a-zA-Z0-9_]+$/.test(username)) {
-      throw new BadRequestException(
-        'Username can only contain letters, numbers, and underscores',
-      );
-    }
-    // validate password
-    if (password && password.length < 6) {
-      throw new BadRequestException(
-        'Password must be at least 6 characters long',
-      );
-    }
-    if (password && password.length > 20) {
-      throw new BadRequestException('Password cannot exceed 20 characters');
-    }
-    if (password && !/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-      throw new BadRequestException(
-        'Password must contain at least one special character',
-      );
-    }
-    if (password && !/\d/.test(password)) {
-      throw new BadRequestException(
-        'Password must contain at least one number',
-      );
-    }
-    if (password && !/[A-Z]/.test(password)) {
-      throw new BadRequestException(
-        'Password must contain at least one uppercase letter',
-      );
-    }
-    if (password && !/[a-z]/.test(password)) {
-      throw new BadRequestException(
-        'Password must contain at least one lowercase letter',
-      );
-    }
+
 
     // update user
     if (username) {

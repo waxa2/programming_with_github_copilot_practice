@@ -1,0 +1,29 @@
+name: CodeQL Analysis
+
+on:
+  push:
+    branches:
+      - dev # Run on pushes to the 'dev' branch
+  pull_request:
+    branches:
+      - dev # Run on pull requests targeting the 'dev' branch
+
+jobs:
+  analyze:
+    name: Analyze Code
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Initialize CodeQL
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: javascript # Specify the language (JavaScript/TypeScript for NestJS)
+
+      # Step 3: Perform CodeQL Analysis
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2

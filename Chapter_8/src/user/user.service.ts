@@ -4,7 +4,7 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from './entities/user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, QueryFailedError, Repository } from 'typeorm';
-import * as bcrypt from 'bcrypt';
+import bcrypt from 'bcrypt';
 import { FindOneUserDto } from './dto/find-one-user.dto';
 
 @Injectable()
@@ -20,6 +20,7 @@ export class UserService {
     }
 
     const { username, password } = param;
+    await this.validateUsername(username);
 
     // validate username
     if (!username) {
@@ -96,14 +97,19 @@ export class UserService {
     }
   }
 
-  private async hashPassword(pw: string) {
-    const sr = 10;
-    const hpw = await bcrypt.hash(pw, sr);
-    return hpw;
+  private async hashPassword(password: string): Promise<string> {
+    const saltRounds = 10;
+    return await bcrypt.hash(password, saltRounds);
   }
 
   async findAll(): Promise<User[]> {
     return await this.userRepository.find();
+  }
+
+  private async validateUsername(username: string): Promise<void> {
+    if (!username) {
+      throw new BadRequestException('Username is required');
+    }
   }
 
   async findOne(query: FindOneUserDto): Promise<User> {

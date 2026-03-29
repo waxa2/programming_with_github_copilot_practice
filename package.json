@@ -1,6 +1,11 @@
 {
   "dependencies": {
     "@nestjs/mapped-types": "*",
-    "@nestjs/serve-static": "^5.0.4"
+    "@nestjs/serve-static": "^4.0.2",
+    "@nestjs/testing": "^10.4.22",
+    "@nestjs/typeorm": "^11.0.0",
+    "@types/bcrypt": "^6.0.0",
+    "bcrypt": "^6.0.0",
+    "typeorm": "^0.3.28"
   }
 }

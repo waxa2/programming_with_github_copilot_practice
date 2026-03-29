@@ -105,19 +105,13 @@ export class UserService {
 		}
 	}
 
-  private async hashPassword(password: string): Promise<string> {
-    const saltRounds = 10;
-    return await bcrypt.hash(password, saltRounds);
-  }
 
   async findAll(): Promise<User[]> {
     return await this.userRepository.find();
   }
 
   private async validateUsername(username: string): Promise<void> {
-    if (!username) {
-      throw new BadRequestException('Username is required');
-    }
+    await this.validateUsernameFormat(username);
   }
 
   async findOne(query: FindOneUserDto): Promise<User> {
